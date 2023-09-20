@@ -103,6 +103,12 @@ int ioctl(int fd, int request, ...);
 
 IO操作的杂物箱，不能用本章中其他函数表示的IO操作通常都能用ioctl表示
 
+11. /dev/fd
+
+较新的系统提供名为/dev/fd的目录，目录项是名为0，1，2等文件，打开/dev/fd/n等效于复制描述符n
+
+具体见apue page 88 - 89
+
 
 
 
